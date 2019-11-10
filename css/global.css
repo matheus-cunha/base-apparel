@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-size: 16px; */
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: hsl(0, 0%, 100%);
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.branding{
+    background-image: url(../images/logo.svg);
+    width: 6rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.container{
+    background-image: url(../images/bg-pattern-desktop.svg), linear-gradient(135deg , hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: 100vh;
+    width: 60%;
+    background-color: beige;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.hero{
+    height: 100%;
+    width: 40%;
+    /* background-image: url(../images/hero-desktop.jpg); */
+    /* background: url(../images/hero-desktop.jpg), linear-gradient(135deg , hsl(0, 80%, 86%), #48ff00b0); */
+    background-image: url(../images/hero-desktop.jpg), linear-gradient(135deg , hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-size: cover;
+    background-position-y: top;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color:hsl(0, 36%, 70%);
+}
+
+h2{
+    text-transform: uppercase;  
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 1rem;
+    color: hsl(0, 6%, 24%);
+}
+
+h3{
+    font-size: 1rem;
+    text-align: center;
+    width: 27rem;
+    text-align: left;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    color:hsl(0, 36%, 70%);
+}
+
+.form-box{
+    position: relative;
+}
+
+.email{
+    padding-left: 1rem;
+    font-size: 0.8rem;
+    width: 23rem;
+    height: 3rem;
+    position: absolute;
+    color: hsl(0, 6%, 24%);
+    border-radius: 3rem;
+    border-style: solid;
+    border-color: hsl(0, 3%, 34% , 0.5);
+    border-width: 0.03rem;
+    outline: none;
+}
+
+.submit{
+    border-radius: 3rem;
+    border-style: none;
+    width: 7rem;
+    height: 3rem;
+    position: absolute;
+    left: 100%;
+    transform: translateX(-100%);
+    outline: none;
+    box-shadow: 5px 5px 15px #e9afaf;
+    background: linear-gradient(to right , #ecb3b3 , hsl(0, 97%, 73%));
+    color: #fff;  
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
